@@ -64,3 +64,14 @@ void DWT_Delay(uint32_t _us)
 // Get MCO HSE to PA8 (D7)
 // the MCO1PRE[2:0] and MCO1[1:0]
 
+
+//////////////////////////////////////////////
+///////////////// DELAY US ///////////////////
+//////////////////////////////////////////////
+
+void delay_us(uint32_t micro){
+	TIM2->PSC = 15;
+	TIM2->CNT = 0;
+	while(TIM2->CNT <= micro){}
+}
+

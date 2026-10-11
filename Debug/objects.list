@@ -1,3 +1,7 @@
+"./Lib/Components/DS18B20/DS18B20.o"
+"./Lib/Protocols/I2C/I2C.o"
+"./Lib/Protocols/ONEWIRE/ONEWIRE.o"
+"./Lib/Protocols/SPI/SPI.o"
 "./Src/gpio.o"
 "./Src/interrupt.o"
 "./Src/main.o"

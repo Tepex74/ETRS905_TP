@@ -1,5 +1,3 @@
-
-
 #ifndef TIMER_H_
 #define TIMER_H_
 
@@ -9,5 +7,7 @@ uint32_t SYSTICK_Get(void);
 
 void DWT_Init(void);
 void DWT_Delay(uint32_t _us);
+
+void delay_us(uint32_t micro);
 
 #endif

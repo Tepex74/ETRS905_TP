@@ -1,6 +1,9 @@
 #ifndef GPIO_H_
 #define GPIO_H_
 
+#include <stdint.h>
+#include <stm32f446xx.h>
+
 void GPIO_Init(void);
 
 void 		GPIO_SetPin(GPIO_TypeDef* GPIO, uint16_t pin);

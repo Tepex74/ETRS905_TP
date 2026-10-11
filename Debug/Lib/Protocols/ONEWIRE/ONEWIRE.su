@@ -1,0 +1,6 @@
+../Lib/Protocols/ONEWIRE/ONEWIRE.c:11:9:ONEWIRE_Reset	24	static
+../Lib/Protocols/ONEWIRE/ONEWIRE.c:33:6:ONEWIRE_WriteByte	24	static
+../Lib/Protocols/ONEWIRE/ONEWIRE.c:47:9:ONEWIRE_ReadByte	24	static
+../Lib/Protocols/ONEWIRE/ONEWIRE.c:65:13:ONEWIRE_Writebit0	16	static
+../Lib/Protocols/ONEWIRE/ONEWIRE.c:72:13:ONEWIRE_Writebit1	16	static
+../Lib/Protocols/ONEWIRE/ONEWIRE.c:79:16:ONEWIRE_Readbit	24	static

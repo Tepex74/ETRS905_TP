@@ -16,7 +16,7 @@ S_DEPS += \
 
 # Each subdirectory must supply rules for building sources it contributes
 Startup/%.o: ../Startup/%.s Startup/subdir.mk
-	arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -I"C:/Users/Depierre Alan.DESKTOP-OSF3G3T/STM32CubeIDE/workspace_2.1.0/ETRS905_TP/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Depierre Alan.DESKTOP-OSF3G3T/STM32CubeIDE/workspace_2.1.0/ETRS905_TP/Drivers/CMSIS/Include" -I"C:/Users/Depierre Alan.DESKTOP-OSF3G3T/STM32CubeIDE/workspace_2.1.0/ETRS905_TP/Inc" -x assembler-with-cpp -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -I"C:/Users/Depierre Alan.DESKTOP-OSF3G3T/STM32CubeIDE/workspace_2.1.0/ETRS905_TP/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Depierre Alan.DESKTOP-OSF3G3T/STM32CubeIDE/workspace_2.1.0/ETRS905_TP/Drivers/CMSIS/Include" -I"C:/Users/Depierre Alan.DESKTOP-OSF3G3T/STM32CubeIDE/workspace_2.1.0/ETRS905_TP/Inc" -I"C:/Users/Depierre Alan.DESKTOP-OSF3G3T/STM32CubeIDE/workspace_2.1.0/ETRS905_TP/Lib/Components/DS18B20" -I"C:/Users/Depierre Alan.DESKTOP-OSF3G3T/STM32CubeIDE/workspace_2.1.0/ETRS905_TP/Lib/Protocols/ONEWIRE" -x assembler-with-cpp -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@" "$<"
 
 clean: clean-Startup
 
