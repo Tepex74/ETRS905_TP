@@ -1,4 +1,5 @@
 "./Lib/Components/DS18B20/DS18B20.o"
+"./Lib/Components/SX1272/SX1272.o"
 "./Lib/Protocols/I2C/I2C.o"
 "./Lib/Protocols/ONEWIRE/ONEWIRE.o"
 "./Lib/Protocols/SPI/SPI.o"

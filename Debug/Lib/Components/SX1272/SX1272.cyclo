@@ -1,0 +1,2 @@
+../Lib/Components/SX1272/SX1272.c:4:6:SX1272_WriteReg	1
+../Lib/Components/SX1272/SX1272.c:11:9:SX1272_ReadReg	1

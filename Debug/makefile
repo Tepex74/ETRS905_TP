@@ -14,6 +14,7 @@ RM := rm -rf
 -include Lib/Protocols/SPI/subdir.mk
 -include Lib/Protocols/ONEWIRE/subdir.mk
 -include Lib/Protocols/I2C/subdir.mk
+-include Lib/Components/SX1272/subdir.mk
 -include Lib/Components/DS18B20/subdir.mk
 -include objects.mk
 

@@ -1,4 +1,3 @@
-../Lib/Protocols/SPI/SPI.c:9:6:SPI1_Init	8	static
-../Lib/Protocols/SPI/SPI.c:25:9:SPI1_TransmitReceive	24	static
-../Lib/Protocols/SPI/SPI.c:32:6:SPI1_ResetSS	8	static
-../Lib/Protocols/SPI/SPI.c:36:6:SPI1_SetSS	8	static
+../Lib/Protocols/SPI/SPI.c:3:9:SPI1_TransmitReceive	16	static
+../Lib/Protocols/SPI/SPI.c:10:6:SPI1_ResetSS	8	static
+../Lib/Protocols/SPI/SPI.c:14:6:SPI1_SetSS	8	static
