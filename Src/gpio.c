@@ -29,3 +29,15 @@ uint16_t GPIO_ReadPin(GPIO_TypeDef* GPIO, uint16_t pin){
 	if((GPIO->IDR & (1 << pin)) !=0)	return 1;
 	else 								return 0;
 }
+
+void GPIO_Pullup(GPIO_TypeDef* GPIO, uint16_t pin){
+	GPIO->PUPDR |= 01 << (pin*2);
+}
+
+void GPIO_Pulldown(GPIO_TypeDef* GPIO, uint16_t pin){
+	GPIO->PUPDR |= 10 << (pin*2);
+}
+
+void GPIO_Nopull(GPIO_TypeDef* GPIO, uint16_t pin){
+	GPIO->PUPDR |= 00 << (pin*2);
+}

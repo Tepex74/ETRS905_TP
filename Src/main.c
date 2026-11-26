@@ -15,12 +15,13 @@ int main(void)
 
 	ONEWIRE_PINOUT Capteur_Temperature;
 	Capteur_Temperature.port = GPIOA;
-	Capteur_Temperature.pin = 1;
+	Capteur_Temperature.pin = 8;
 
 	float Temperature = 0;
 
 	FPU_Init();
 	GPIO_Init();
+	TIM2_Init();
 	USART2_Init();
 	SYSTICK_Init();
 

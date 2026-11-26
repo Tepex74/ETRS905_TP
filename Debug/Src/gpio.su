@@ -3,3 +3,6 @@
 ../Src/gpio.c:20:6:GPIO_ResetPin	16	static
 ../Src/gpio.c:24:6:GPIO_TogglePin	16	static
 ../Src/gpio.c:28:10:GPIO_ReadPin	16	static
+../Src/gpio.c:33:6:GPIO_Pullup	16	static
+../Src/gpio.c:37:6:GPIO_Pulldown	16	static
+../Src/gpio.c:41:6:GPIO_Nopull	16	static

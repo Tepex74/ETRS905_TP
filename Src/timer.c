@@ -69,9 +69,16 @@ void DWT_Delay(uint32_t _us)
 ///////////////// DELAY US ///////////////////
 //////////////////////////////////////////////
 
+void TIM2_Init(void){
+	RCC->APB1ENR |=RCC_APB1ENR_TIM2EN;
+	TIM2->PSC = (SystemCoreClock / 1000000) -1;
+	TIM2->ARR = 0xFFFFFFFF;
+	TIM2->EGR = TIM_EGR_UG;
+	TIM2->CR1 |= TIM_CR1_CEN;
+}
+
 void delay_us(uint32_t micro){
-	TIM2->PSC = 15;
-	TIM2->CNT = 0;
-	while(TIM2->CNT <= micro){}
+	uint32_t start = TIM2->CNT;
+	while((TIM2->CNT- start) <= micro){}
 }
 

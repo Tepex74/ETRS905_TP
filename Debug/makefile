@@ -65,7 +65,7 @@ main-build: ETRS905_TP.elf secondary-outputs
 
 # Tool invocations
 ETRS905_TP.elf ETRS905_TP.map: $(OBJS) $(USER_OBJS) C:\Users\Depierre\ Alan.DESKTOP-OSF3G3T\STM32CubeIDE\workspace_2.1.0\ETRS905_TP\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "ETRS905_TP.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Depierre Alan.DESKTOP-OSF3G3T\STM32CubeIDE\workspace_2.1.0\ETRS905_TP\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ETRS905_TP.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "ETRS905_TP.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Depierre Alan.DESKTOP-OSF3G3T\STM32CubeIDE\workspace_2.1.0\ETRS905_TP\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ETRS905_TP.map" -Wl,--gc-sections -static -z noexecstack --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

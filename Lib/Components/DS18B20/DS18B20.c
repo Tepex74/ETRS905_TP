@@ -3,11 +3,14 @@
 #include "timer.h"
 #include "ONEWIRE.h"
 #include "DS18B20.h"
+#include "GPIO.h"
 
 float DS18B20_GetTemperature(ONEWIRE_PINOUT* onewire_Pinout){
 
 	uint8_t component = 0;
 	uint8_t temperature = 0;
+
+	GPIO_Pullup(GPIOA, 8);
 
 	component = ONEWIRE_Reset(onewire_Pinout);
 
@@ -34,5 +37,6 @@ float DS18B20_GetTemperature(ONEWIRE_PINOUT* onewire_Pinout){
 	else{
 		printf("Component not detected\n\r");
 	}
+	GPIO_Nopull(GPIOA, 8);
 	return (float)temperature/4;
 }
